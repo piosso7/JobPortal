@@ -18,11 +18,9 @@ body {
 /* Navbar */
 nav {
   display: flex;
-  position: absolute;
   width: 90vw;
   max-width: 1400px;
   background-color: #fff;
-  top: 0;
   margin: 0px auto;
   padding: 18px;
   justify-content: space-between;
@@ -81,7 +79,7 @@ nav {
   flex-direction: column;
   background-color: #eff6f2;
   padding-top: 100px;
-  background-image: url(./pictures/mainBannerImage.png);
+  background-image: url(../pictures/mainBannerImage.png);
   background-size: cover;
 }
 
@@ -111,7 +109,7 @@ nav {
   display: flex;
   flex-direction: row;
   width: 100%;
-  margin-bottom: 300px;
+  margin-bottom: 180px;
 }
 .searchBar input {
   border: none;
