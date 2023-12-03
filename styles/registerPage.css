@@ -1,0 +1,67 @@
+.registerPage {
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+  align-items: center;
+}
+
+.registerForm {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  border-radius: 10px;
+  border: 1px solid #e3e3e3;
+  padding: 10px;
+  margin-bottom: 20px;
+}
+
+.registerUser,
+.registerPassword {
+  width: 100%;
+}
+
+.registerForm div p {
+  font-size: 25px;
+  font-weight: 500;
+  margin-bottom: 10px;
+}
+
+.registerForm div input {
+  width: 100%;
+  font-size: 25px;
+  padding: 5px;
+  margin-bottom: 20px;
+  border-radius: 10px;
+  border: 1px solid #d6d6d6;
+}
+
+.registerPage button {
+  border: none;
+  border-radius: 10px;
+  padding: 20px 35px;
+  font-size: 24px;
+  font-weight: 700;
+  cursor: pointer;
+  color: #fff;
+  background-color: #338573;
+  margin-bottom: 20px;
+  transition: 0.3s;
+  width: 100%;
+}
+.registerPage button:hover {
+  color: #338573;
+  background-color: #fff;
+}
+
+.haveAccount {
+  font-size: 24px;
+  font-weight: 500;
+}
+
+.haveAccount a {
+  font-weight: 800;
+  text-decoration: none;
+  color: black;
+}

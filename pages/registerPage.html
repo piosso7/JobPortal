@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="../styles/style.css" />
     <link rel="stylesheet" href="../styles/jobPageStyles.css" />
-    <link rel="stylesheet" href="../styles/loginPage.css" />
+    <link rel="stylesheet" href="../styles/registerPage.css" />
     <title>Job Portal - Job Page</title>
   </head>
   <body>
@@ -25,24 +25,28 @@
     <!-- Title -->
 
     <section class="titleJobPage">
-      <p>Login</p>
+      <p>Register</p>
     </section>
 
-    <!-- Login form -->
+    <!-- Register form -->
 
-    <section class="loginPage">
-      <div class="loginForm">
-        <div class="loginUser">
+    <section class="registerPage">
+      <div class="registerForm">
+        <div class="registerUser">
           <p>Username</p>
           <input type="text" placeholder="Username" />
         </div>
-        <div class="loginPassword">
+        <div class="registerPassword">
           <p>Password</p>
           <input type="password" placeholder="Password" />
         </div>
-        <button>Login</button>
-        <p class="noAccount">
-          Not a member? <a href="./registerPage.html">Register</a>
+        <div class="registerPassword">
+          <p>Repeat password</p>
+          <input type="password" placeholder="Repeat password" />
+        </div>
+        <button>Create Account</button>
+        <p class="haveAccount">
+          Do you have an account? <a href="./loginPage.html">Login</a>
         </p>
       </div>
     </section>
