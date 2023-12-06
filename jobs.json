@@ -1,0 +1,47 @@
+[
+  {
+    "id": 1,
+    "companyName": "Match Company Limited",
+    "companyWebsite": "ww.matchcompanylimited.test",
+    "title": "Laravel Developer 1",
+    "category": "Front-End",
+    "type": "Full-Time",
+    "location": "San Francisco, USA",
+    "salary": "105,000 - 150,000",
+    "experience": "2 years",
+    "qualification": "Bachelor",
+    "deadline": "12/08/2022",
+    "link": "https://github.com/",
+    "description": "We are searching for a Laravel developer to build web applications for our company. In this role, you will design and create projects using Laravel framework and PHP, and assist the team in delivering high-quality web applications, services, and tools for our business. To ensure success as a Laravel developer you should be adept at utilizing Laravel's GUI and be able to design a PHP application from start to finish. A top-notch Laravel developer will be able to leverage their expertise and experience of the framework to independently produce complete solutions in a short turnaround time."
+  },
+  {
+    "id": 2,
+    "companyName": "Match Company Limited",
+    "companyWebsite": "ww.matchcompanylimited.test",
+    "title": "Laravel Developer 2",
+    "category": "Front-End",
+    "type": "Full-Time",
+    "location": "San Francisco, USA",
+    "salary": "105,000 - 150,000",
+    "experience": "2 years",
+    "qualification": "Bachelor",
+    "deadline": "12/08/2022",
+    "link": "https://github.com/",
+    "description": "We are searching for a Laravel developer to build web applications for our company. In this role, you will design and create projects using Laravel framework and PHP, and assist the team in delivering high-quality web applications, services, and tools for our business. To ensure success as a Laravel developer you should be adept at utilizing Laravel's GUI and be able to design a PHP application from start to finish. A top-notch Laravel developer will be able to leverage their expertise and experience of the framework to independently produce complete solutions in a short turnaround time."
+  },
+  {
+    "id": 3,
+    "companyName": "Match Company Limited",
+    "companyWebsite": "ww.matchcompanylimited.test",
+    "title": "Laravel Developer 3",
+    "category": "Front-End",
+    "type": "Full-Time",
+    "location": "San Francisco, USA",
+    "salary": "105,000 - 150,000",
+    "experience": "2 years",
+    "qualification": "Bachelor",
+    "deadline": "12/08/2022",
+    "link": "https://github.com/",
+    "description": "We are searching for a Laravel developer to build web applications for our company. In this role, you will design and create projects using Laravel framework and PHP, and assist the team in delivering high-quality web applications, services, and tools for our business. To ensure success as a Laravel developer you should be adept at utilizing Laravel's GUI and be able to design a PHP application from start to finish. A top-notch Laravel developer will be able to leverage their expertise and experience of the framework to independently produce complete solutions in a short turnaround time."
+  }
+]
