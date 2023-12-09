@@ -15,6 +15,10 @@ body {
   overflow-x: hidden;
 }
 
+body.popupOpen {
+  overflow: hidden;
+}
+
 /* Navbar */
 nav {
   display: flex;
@@ -322,6 +326,42 @@ p.jobEarning {
 .jobButton:hover {
   color: #338573;
   background-color: #fff;
+}
+
+/* Job Info Popup */
+
+.jobInfoPopup.active {
+  position: fixed;
+  justify-content: center;
+  align-items: end;
+  margin: 5vh auto;
+  height: 90vh;
+  width: 95vw;
+  display: flex;
+  flex-direction: column;
+  background-color: white;
+  border-radius: 20px;
+  border: 1px solid #d6d6d6;
+  transition: 0.3s linear;
+}
+
+.jobInfoPopup.inactive {
+  display: none;
+  transition: 0.3s linear;
+}
+
+.popupClose {
+  height: 10%;
+  cursor: pointer;
+}
+
+.jobInfoPopupDescription {
+  height: 95%;
+  width: 100%;
+  border-radius: 5px;
+  background-color: white;
+  overflow: auto;
+  padding: 2%;
 }
 
 /* Foot */

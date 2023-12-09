@@ -66,7 +66,7 @@
 }
 
 .jobPageDetailDescription .details p {
-  font-size: 20px;
+  font-size: 30px;
   color: black;
   margin-bottom: 10px;
 }
@@ -78,6 +78,7 @@
 .jobPageDetailDescription .description {
   display: flex;
   flex-direction: column;
+  font-size: 24px;
 }
 .jobPageDetailDescription .description h3 {
   font-size: 24px;
@@ -86,7 +87,7 @@
 }
 
 .jobPageDetailDescription .description p {
-  font-size: 20px;
+  font-size: 30px;
   font-weight: 300;
   margin-bottom: 30px;
 }

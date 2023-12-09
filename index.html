@@ -4,6 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="./styles/style.css" />
+    <link rel="stylesheet" href="./styles/jobPopupStyles.css" />
     <title>Job Portal</title>
   </head>
   <body>
@@ -68,165 +69,20 @@
 
     <section class="popularJobs">
       <h2>All Popular Listed jobs</h2>
-      <div id="jobsOutput" class="jobs">
-        <!-- <div class="job">
-          <div class="jobMainElements">
-            <div class="jobLogo">
-              <p class="logoSymbol">A</p>
-            </div>
-            <div class="jobDescription">
-              <p>Match Company Limited</p>
-              <h3>Fresher UI/UX Designer (3 Year Exp.)</h3>
-              <div class="jobDetails">
-                <div class="jobLocation">
-                  <img
-                    class="smalIcon"
-                    src="./pictures/jobLocation.svg"
-                    alt="job location"
-                  />
-                  <p>Nairobi, Kenya</p>
-                </div>
-                <div class="jobType">
-                  <img
-                    class="smalIcon"
-                    src="./pictures/jobTypeIcon.svg"
-                    alt="job type icon"
-                  />
-                  <p>Full Time</p>
-                </div>
-                <p class="jobEarning">$ 120 000</p>
-              </div>
-            </div>
-          </div>
-          <a href="./pages/jobPage.html"
-            ><button class="jobButton">View Details</button></a
-          >
-        </div>
-        <div class="job">
-          <div class="jobMainElements">
-            <div class="jobLogo">
-              <p class="logoSymbol">A</p>
-            </div>
-            <div class="jobDescription">
-              <p>Match Company Limited</p>
-              <h3>Fresher UI/UX Designer (3 Year Exp.)</h3>
-              <div class="jobDetails">
-                <div class="jobLocation">
-                  <img
-                    class="smalIcon"
-                    src="./pictures/jobLocation.svg"
-                    alt="job location"
-                  />
-                  <p>Nairobi, Kenya</p>
-                </div>
-                <div class="jobType">
-                  <img
-                    class="smalIcon"
-                    src="./pictures/jobTypeIcon.svg"
-                    alt="job type icon"
-                  />
-                  <p>Full Time</p>
-                </div>
-                <p class="jobEarning">$ 120 000</p>
-              </div>
-            </div>
-          </div>
-          <button class="jobButton">View Details</button>
-        </div>
-        <div class="job">
-          <div class="jobMainElements">
-            <div class="jobLogo">
-              <p class="logoSymbol">A</p>
-            </div>
-            <div class="jobDescription">
-              <p>Match Company Limited</p>
-              <h3>Fresher UI/UX Designer (3 Year Exp.)</h3>
-              <div class="jobDetails">
-                <div class="jobLocation">
-                  <img
-                    class="smalIcon"
-                    src="./pictures/jobLocation.svg"
-                    alt="job location"
-                  />
-                  <p>Nairobi, Kenya</p>
-                </div>
-                <div class="jobType">
-                  <img
-                    class="smalIcon"
-                    src="./pictures/jobTypeIcon.svg"
-                    alt="job type icon"
-                  />
-                  <p>Full Time</p>
-                </div>
-                <p class="jobEarning">$ 120 000</p>
-              </div>
-            </div>
-          </div>
-          <button class="jobButton">View Details</button>
-        </div>
-        <div class="job">
-          <div class="jobMainElements">
-            <div class="jobLogo">
-              <p class="logoSymbol">A</p>
-            </div>
-            <div class="jobDescription">
-              <p>Match Company Limited</p>
-              <h3>Fresher UI/UX Designer (3 Year Exp.)</h3>
-              <div class="jobDetails">
-                <div class="jobLocation">
-                  <img
-                    class="smalIcon"
-                    src="./pictures/jobLocation.svg"
-                    alt="job location"
-                  />
-                  <p>Nairobi, Kenya</p>
-                </div>
-                <div class="jobType">
-                  <img
-                    class="smalIcon"
-                    src="./pictures/jobTypeIcon.svg"
-                    alt="job type icon"
-                  />
-                  <p>Full Time</p>
-                </div>
-                <p class="jobEarning">$ 120 000</p>
-              </div>
-            </div>
-          </div>
-          <button class="jobButton">View Details</button>
-        </div>
-        <div class="job">
-          <div class="jobMainElements">
-            <div class="jobLogo">
-              <p class="logoSymbol">A</p>
-            </div>
-            <div class="jobDescription">
-              <p>Match Company Limited</p>
-              <h3>Fresher UI/UX Designer (3 Year Exp.)</h3>
-              <div class="jobDetails">
-                <div class="jobLocation">
-                  <img
-                    class="smalIcon"
-                    src="./pictures/jobLocation.svg"
-                    alt="job location"
-                  />
-                  <p>Nairobi, Kenya</p>
-                </div>
-                <div class="jobType">
-                  <img
-                    class="smalIcon"
-                    src="./pictures/jobTypeIcon.svg"
-                    alt="job type icon"
-                  />
-                  <p>Full Time</p>
-                </div>
-                <p class="jobEarning">$ 120 000</p>
-              </div>
-            </div>
-          </div>
-          <button class="jobButton">View Details</button>
-        </div> -->
-      </div>
+      <div id="jobsOutput" class="jobs"></div>
+    </section>
+
+    <!-- Job Info Popup -->
+
+    <section id="jobInfoPopup" class="jobInfoPopup inactive">
+      <img
+        id="popupClose"
+        class="popupClose"
+        src="./pictures/popupClose.svg"
+        alt="close popup"
+        onclick="closePopup()"
+      />
+      <div id="jobInfoPopupDescription" class="jobInfoPopupDescription"></div>
     </section>
 
     <!-- Foot -->
