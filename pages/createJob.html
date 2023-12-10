@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="../styles/style.css" />
-    <link rel="stylesheet" href="../styles/jobPageStyles.css" />
+    <link rel="stylesheet" href="../styles/jobPopupStyles.css" />
     <link rel="stylesheet" href="../styles/createJob.css" />
     <title>Job Portal - Job Page</title>
   </head>
@@ -32,19 +32,24 @@
     <section class="createJobForm">
       <div class="smallInput">
         <p>Company Name</p>
-        <input type="text" placeholder="Name" />
+        <input
+          id="companyName"
+          type="text"
+          placeholder="Name"
+          required="required"
+        />
       </div>
       <div class="smallInput">
         <p>Company Website</p>
-        <input type="text" placeholder="Website Link" />
+        <input id="website" type="text" placeholder="Website Link" />
       </div>
       <div class="longInput">
         <p>Job Title</p>
-        <input type="text" placeholder="Title" />
+        <input id="title" type="text" placeholder="Title" />
       </div>
       <div class="smallInput">
         <p>Job Category</p>
-        <select>
+        <select id="category">
           <option value="">Please choose Job Category</option>
           <option value="Front-End">Front-End</option>
           <option value="Backend">Backend</option>
@@ -55,8 +60,8 @@
       </div>
       <div class="smallInput">
         <p>Job Type</p>
-        <select>
-          <option value="">Please choose Job Type</option>
+        <select id="type">
+          <option value="Other">Please choose Job Type</option>
           <option value="Full-Time">Full-Time</option>
           <option value="Part-Time">Part-Time</option>
           <option value="B2B">B2B</option>
@@ -64,38 +69,38 @@
       </div>
       <div class="smallInput">
         <p>Job Location</p>
-        <input type="text" />
+        <input type="text" id="companyLocation" />
       </div>
       <div class="smallInput">
         <p>Salary Range</p>
-        <input type="text" />
+        <input type="text" id="salary" />
       </div>
       <div class="smallInput">
         <p>Experience</p>
-        <input type="text" />
+        <input type="text" id="experience" />
       </div>
       <div class="smallInput">
         <p>Qualification</p>
-        <input type="text" />
+        <input type="text" id="qualification" />
       </div>
       <div class="longInput">
         <p>Application Deadline</p>
-        <input type="text" />
+        <input type="text" id="deadline" />
       </div>
       <div class="longInput">
         <p>Job Application Link</p>
-        <input type="text" />
+        <input type="text" id="aplicationLink" />
       </div>
       <div class="bigInput">
         <p>Job Description</p>
-        <textarea name="" id="" cols="30" rows="10"></textarea>
+        <textarea name="" cols="30" rows="10" id="jobDescription"></textarea>
       </div>
     </section>
 
     <!-- Button -->
 
     <div class="buttonCreateJobForm">
-      <button>Post Job</button>
+      <button id="addJobButton">Post Job</button>
     </div>
 
     <!-- Foot -->
@@ -103,5 +108,6 @@
     <section class="foot">
       <p>© 2023 Jobs Portal.</p>
     </section>
+    <script src="../scripts/addNewJob.js"></script>
   </body>
 </html>

@@ -1,6 +1,6 @@
 //display jobs on home page
 
-fetch("../jobs.json")
+fetch("http://localhost:3000/jobs")
   .then(function (response) {
     return response.json();
   })
@@ -87,7 +87,7 @@ function jobButtonClick(btn) {
 //Get specific page data
 function getClickedJobInfo() {
   let jobOut = "";
-  fetch("../jobs.json")
+  fetch("http://localhost:3000/jobs")
     .then((response) => response.json())
     .then((data) => {
       if (Array.isArray(data) && data.length > 1) {
