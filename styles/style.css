@@ -123,17 +123,6 @@ nav {
   border-radius: 20px;
 }
 
-.searchBar button {
-  border: none;
-  border-radius: 20px;
-  padding: 13px 35px;
-  font-size: 20px;
-  font-weight: 700;
-  cursor: pointer;
-  color: #fff;
-  background-color: #338573;
-}
-
 /* Popular Categories */
 
 .popularCategories {

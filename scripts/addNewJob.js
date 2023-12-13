@@ -67,7 +67,7 @@ addJobButton.addEventListener("click", function () {
       body: JSON.stringify(newJob),
     })
       .then((response) => response.json())
-      .then((data) => console.log("Dodano nowy obiekt:", data))
+      .then(() => alert("New job posted"))
       .catch((error) => console.error("Błąd:", error));
   }
 });

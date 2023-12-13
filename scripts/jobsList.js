@@ -1,14 +1,10 @@
 //display jobs on home page
 
-fetch("http://localhost:3000/jobs")
-  .then(function (response) {
-    return response.json();
-  })
-  .then(function (jobs) {
-    let placeholder = document.querySelector("#jobsOutput");
-    let out = "";
-    for (let job of jobs) {
-      out += `
+function displayJobs(jobs) {
+  let placeholder = document.querySelector("#jobsOutput");
+  let out = "";
+  for (let job of jobs) {
+    out += `
         <div class="job">
           <div class="jobMainElements">
             <div class="jobLogo">
@@ -43,9 +39,37 @@ fetch("http://localhost:3000/jobs")
           }" class="jobButton" onclick="jobButtonClick(this)">View Details</button>
         </div>
         `;
-    }
-    placeholder.innerHTML = out;
-  });
+  }
+  placeholder.innerHTML = out;
+}
+
+// Funkcja wyszukiwania ofert pracy
+function searchJobs() {
+  const searchTerm = document.getElementById("searchInput").value.toLowerCase();
+  fetch("http://localhost:3000/jobs")
+    .then((response) => response.json())
+    .then((jobs) => {
+      const filteredJobs = jobs.filter((job) => {
+        // Warunek wyszukiwania - porównanie frazy z polami oferty pracy
+        return (
+          job.title.toLowerCase().includes(searchTerm) ||
+          job.companyName.toLowerCase().includes(searchTerm) ||
+          job.category.toLowerCase().includes(searchTerm)
+        );
+      });
+      displayJobs(filteredJobs); // Wyświetlenie wyników wyszukiwania
+    })
+    .catch((error) => console.error("Błąd podczas pobierania danych:", error));
+}
+
+document.getElementById("searchInput").addEventListener("input", searchJobs);
+
+fetch("http://localhost:3000/jobs")
+  .then((response) => response.json())
+  .then((jobs) => {
+    displayJobs(jobs); // Wyświetlenie wszystkich ofert pracy na stronie
+  })
+  .catch((error) => console.error("Błąd podczas pobierania danych:", error));
 
 // close popup
 
