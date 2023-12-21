@@ -43,31 +43,37 @@ function displayJobs(jobs) {
   placeholder.innerHTML = out;
 }
 
-// Funkcja wyszukiwania ofert pracy
+// Job search function
 function searchJobs() {
   const searchTerm = document.getElementById("searchInput").value.toLowerCase();
-  fetch("http://localhost:3000/jobs")
+  fetch(
+    "https://api.jsonsilo.com/public/62ef1f8e-4679-4656-9028-40c75114be95",
+    {
+      headers: { "Content-Type": "application/json" },
+    }
+  )
     .then((response) => response.json())
     .then((jobs) => {
       const filteredJobs = jobs.filter((job) => {
-        // Warunek wyszukiwania - porównanie frazy z polami oferty pracy
         return (
           job.title.toLowerCase().includes(searchTerm) ||
           job.companyName.toLowerCase().includes(searchTerm) ||
           job.category.toLowerCase().includes(searchTerm)
         );
       });
-      displayJobs(filteredJobs); // Wyświetlenie wyników wyszukiwania
+      displayJobs(filteredJobs); // Displaying search results
     })
     .catch((error) => console.error("Błąd podczas pobierania danych:", error));
 }
 
 document.getElementById("searchInput").addEventListener("input", searchJobs);
 
-fetch("http://localhost:3000/jobs")
+fetch("https://api.jsonsilo.com/public/62ef1f8e-4679-4656-9028-40c75114be95", {
+  headers: { "Content-Type": "application/json" },
+})
   .then((response) => response.json())
   .then((jobs) => {
-    displayJobs(jobs); // Wyświetlenie wszystkich ofert pracy na stronie
+    displayJobs(jobs); // View all jobs on the site
   })
   .catch((error) => console.error("Błąd podczas pobierania danych:", error));
 
@@ -111,7 +117,12 @@ function jobButtonClick(btn) {
 //Get specific page data
 function getClickedJobInfo() {
   let jobOut = "";
-  fetch("http://localhost:3000/jobs")
+  fetch(
+    "https://api.jsonsilo.com/public/62ef1f8e-4679-4656-9028-40c75114be95",
+    {
+      headers: { "Content-Type": "application/json" },
+    }
+  )
     .then((response) => response.json())
     .then((data) => {
       if (Array.isArray(data) && data.length > 1) {

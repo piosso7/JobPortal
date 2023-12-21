@@ -15,7 +15,9 @@ const jobDescription = document.querySelector("#jobDescription");
 
 let nextJobId;
 
-fetch("http://localhost:3000/jobs")
+fetch("https://api.jsonsilo.com/public/62ef1f8e-4679-4656-9028-40c75114be95", {
+  headers: { "Content-Type": "application/json" },
+})
   .then((response) => response.json())
   .then((jobs) => {
     // Checking the number of objects in a data array
@@ -59,13 +61,16 @@ addJobButton.addEventListener("click", function () {
       link: aplicationLink.value,
       description: jobDescription.value,
     };
-    fetch("http://localhost:3000/jobs", {
-      method: "POST",
-      headers: {
-        "Content-Type": "application/json",
-      },
-      body: JSON.stringify(newJob),
-    })
+    fetch(
+      "https://api.jsonsilo.com/public/62ef1f8e-4679-4656-9028-40c75114be95",
+      {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify(newJob),
+      }
+    )
       .then((response) => response.json())
       .then(() => alert("New job posted"))
       .catch((error) => console.error("Błąd:", error));
