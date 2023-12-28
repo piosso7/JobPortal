@@ -80,3 +80,26 @@
   color: #338573;
   background-color: #fff;
 }
+
+@media (max-width: 600px) {
+  .titleJobPage p {
+    font-size: 22px;
+    padding: 20px;
+  }
+  .titleJobPage {
+    margin-top: 0px;
+  }
+  .createJobForm div p {
+    font-size: 16px;
+  }
+  .createJobForm div input {
+    font-size: 16px;
+  }
+  .createJobForm div select {
+    font-size: 16px;
+  }
+  .buttonCreateJobForm button {
+    padding: 10px 23px;
+    font-size: 16px;
+  }
+}

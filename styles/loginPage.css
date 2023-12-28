@@ -65,3 +65,30 @@
   text-decoration: none;
   color: black;
 }
+
+@media (max-width: 600px) {
+  body {
+    height: 100vh;
+  }
+  .titleJobPage {
+    display: none;
+  }
+  .loginPage {
+    width: 100%;
+    height: 100%;
+  }
+
+  .loginForm div p {
+    font-size: 16px;
+  }
+  .loginForm div input {
+    font-size: 16px;
+  }
+  .loginPage button {
+    padding: 13px 10px;
+    font-size: 16px;
+  }
+  .noAccount {
+    font-size: 16px;
+  }
+}

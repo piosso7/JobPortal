@@ -28,6 +28,7 @@ nav {
   margin: 0px auto;
   padding: 18px;
   justify-content: space-between;
+  align-items: center;
 }
 
 .navTitle {
@@ -369,4 +370,91 @@ p.jobEarning {
   color: #fff;
   font-weight: 400;
   padding: 30px;
+}
+
+@media (max-width: 600px) {
+  .navTitle {
+    font-size: 16px;
+  }
+  .navButton {
+    font-size: 16px;
+    padding: 13px 10px;
+  }
+  .mainScreen {
+    padding-top: 0px;
+    background-image: none;
+  }
+  .descriptionMain {
+    width: 90%;
+    margin-top: 50px;
+    margin-left: 25px;
+  }
+  .mainH1 {
+    font-size: 32px;
+  }
+  .mainP {
+    font-size: 16px;
+    margin-bottom: 32px;
+  }
+
+  .searchBar {
+    margin-bottom: 60px;
+  }
+  .searchBar input {
+    width: 90%;
+    font-size: 16px;
+  }
+
+  .popularCategories h2 {
+    font-size: 26px;
+    margin-bottom: 0px;
+  }
+
+  .category {
+    width: 49%;
+  }
+
+  .popularJobs h2 {
+    font-size: 26px;
+    font-weight: 600;
+    margin-top: 0px;
+    margin-bottom: 0px;
+  }
+  .jobs {
+    padding: 10px 5px;
+  }
+  .job {
+    padding: 5px;
+  }
+  .jobLogo {
+    margin-right: 5px;
+    width: 30%;
+  }
+  .jobLogo p {
+    font-size: 32px;
+  }
+  .jobDescription p {
+    font-size: 12px;
+  }
+  .jobDescription h3 {
+    font-size: 16px;
+    margin-bottom: 2px;
+    margin-top: 2px;
+  }
+  .jobLocation p {
+    margin-left: 2px;
+  }
+  .jobType {
+    display: none;
+  }
+  p.jobEarning {
+    display: none;
+  }
+  .jobButton {
+    padding: 4px 3px;
+  }
+  .foot p {
+    font-size: 16px;
+    padding: 20px;
+  }
 }
