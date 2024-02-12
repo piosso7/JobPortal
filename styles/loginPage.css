@@ -1,3 +1,8 @@
+body {
+  height: 100vh;
+  justify-content: space-between;
+}
+
 .loginPage {
   display: flex;
   flex-direction: column;
@@ -69,9 +74,6 @@
 @media (max-width: 600px) {
   body {
     height: 100vh;
-  }
-  .titleJobPage {
-    display: none;
   }
   .loginPage {
     width: 100%;
